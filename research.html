@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Centered Design Projects</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAEAEA;
+            color: #333;
+        }
+
+        header {
+            background: #DBCFD3;
+            color: #877978;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #DBCFD3;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            color: #877978;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            z-index: 1;
+            padding: 5px 0;
+        }
+
+        .dropdown a {
+            padding: 10px 20px;
+            margin: 5px 0;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .dropdown a:hover {
+            background: #555;
+        }
+
+        li:hover .dropdown {
+            display: block;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        .projects-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .project {
+            padding: 20px;
+            background-color: #EAEAEA;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            max-width: 50%; /* Adjusts the image size */
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .project h3 {
+            color: #444;
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        .project a {
+            color: #877978;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .project a:hover {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HCI Research Projects</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li>
+                <a href="#">HCI Work</a>
+                <ul class="dropdown">
+                    <li><a href="humancentereddesign.html">Human Centered Design</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Misc. Work</a>
+                <ul class="dropdown">
+                    <li><a href="psychology.html">Human Factors Psychology</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="projects-section">
+        <div class="project">
+            <h3>Coming soon...</h3>
+            <p>I am currently working on a user research project that will be added soon!</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

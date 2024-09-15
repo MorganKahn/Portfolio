@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Kahn - Portfolio</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAEAEA;
+            color: #333;
+        }
+
+        header {
+            background: #DBCFD3;
+            color: #877978;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #DBCFD3;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            color: #877978;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            z-index: 1;
+            padding: 5px 0;
+        }
+
+        .dropdown a {
+            padding: 10px 20px;
+            margin: 5px 0;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .dropdown a:hover {
+            background: #555;
+        }
+
+        li:hover .dropdown {
+            display: block;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0 50px;
+        }
+
+        .about-content h2 {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .about-image {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .portfolio, .skills, .education-content {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .skills li {
+            background: #DBCFD3;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .education-content h2 {
+            margin: 0;
+        }
+
+        /* Style for CV section */
+        .cv-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cv-iframe {
+            width: 100%;
+            height: 600px; /* Adjust the height as needed */
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #DBCFD3;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cv-button:hover {
+            background-color: #c1b8b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Morgan Kahn</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li>
+                <a href="#">HCI Work</a>
+                <ul class="dropdown">
+                    <li><a href="humancentereddesign.html">Human Centered Design</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Misc. Work</a>
+                <ul class="dropdown">
+                    <li><a href="psychology.html">Human Factors Psychology</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="about-content">
+    <div class="about-text">
+    <h2>About Me</h2>
+            <p>Hey, I'm Morgan! I am a graduate student at the University of Maryland studying human-computer interaction. I have a background in human factors psychology and am particularly interested in user research, human factors engineering, and data analytics. I have previously worked on human factors research projects involving user accessibility and education technology, and I am passionate about creating accessible and ethical human-centered solutions for information problems.</p>
+            <p>Beyond my intellectual goals, you'll find me hiking or planning my next trip! For further information about me and my experiences, please contact me at <a href="mailto:morgan.kahn@cox.net">morgan.kahn@cox.net</a>.</p>
+        </div>
+        <img src="port.jpg" alt="Morgan Kahn" class="about-image">
+    </div>
+</div>
+
+<section class="education-content">
+    <h2>My Education</h2>
+    <p>MS in Human-Computer Interaction (Expected 2026)</p>
+    <p>BS in Psychology, Human Factors & Applied Cognition</p>
+    <p>Minor in Design Thinking</p>
+</section>
+
+<section class="portfolio">
+    <h2>My CV</h2>
+    <div class="cv-container">
+        <iframe src="MorganKahnCV.pdf" class="cv-iframe" allowfullscreen></iframe>
+        <br>
+        <a href="MorganKahnCV.pdf" class="cv-button" target="_blank">Open CV in New Tab</a>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>Key Skills</h2>
+    <ul>
+        <li>User Research</li>
+        <li>Human Factors Research</li>
+        <li>Project Management</li>
+        <li>Programming</li>
+        <li>Data Analysis</li>
+    </ul>
+</section>
+
+</body>
+</html>
+
